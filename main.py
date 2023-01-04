@@ -10,4 +10,9 @@ tip = bill * (percent / 100)
 
 pay = (bill + tip) / party
 
-print(f"Each person should pay: ${round(pay, 2)}")
+# print(f"Each person should pay: ${round(pay, 2)}") 
+
+# format and ensure it's set to 2 decimal places, even though it's not required
+final_amount = "{:.2f}".format(pay) 
+
+print(f"Each person should pay: ${final_amount}") 
